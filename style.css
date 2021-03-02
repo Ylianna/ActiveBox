@@ -126,6 +126,7 @@ position: absolute;
     padding: 14px 40px;
     border-radius: 2px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     border: 0;
     cursor: pointer;
     vertical-align: top;
@@ -139,6 +140,9 @@ position: absolute;
 
 .btn--red {
     background-color: #e84545;
+}
+.btn--long {
+    min-width: 280px;
 }
 
 .btn--red:hover {
@@ -283,6 +287,9 @@ position: absolute;
 .social {
     display: flex;
 }
+.social--footer {
+    justify-content: center;
+}
 .social__item {
     display: flex;
     justify-content: center;
@@ -308,8 +315,21 @@ position: absolute;
     fill: #c6cacc;
     transition: fill .1s linear;
 }
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
 
-/* Reviews*/
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
+.social--footer .social__icon {
+    fill: #fff;
+}
+    /* Reviews*/
 
 .reviews {
     overflow: hidden;
@@ -353,5 +373,69 @@ position: absolute;
     font-style: italic;
     font-size: 36px;
     line-height: 1.2;
+    color: #fff;
+}
+/* Download */
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+.download__title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color:#2d3033;
+    font-weight: 300;
+}
+.download__text {
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* Footer */
+.footer {
+    background-color: #3a3e64;
+}
+.footer__inner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 15px;
+}
+.footer__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer__address {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color:rgba(255, 255, 255, .5);
+}
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color:rgba(255, 255, 255, .5);
+}
+/* Copyright */
+.copyright {
+    padding: 20px 0;
+    background-color: #313454;
+}
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+.copyright__text span {
     color: #fff;
 }
